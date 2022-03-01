@@ -13,8 +13,3 @@
   - Conectar Redux aos componentes React
 
   - Criar actions assíncronas na sua aplicação React que faz uso de Redux.
-
-# Link
-
- https://camilladelg.github.io/trivia/
- trivia-henna-nine.vercel.app
