@@ -1,0 +1,14 @@
+.div {
+ display: flex;
+ flex-direction: row
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  width: 50%;
+}
+
