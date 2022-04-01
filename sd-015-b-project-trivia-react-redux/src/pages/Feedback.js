@@ -48,7 +48,7 @@ class Feedback extends React.Component {
     const { player } = JSON.parse(localStorage.getItem('state'));
     console.log(player.assertions);
     return (
-      <div className="">
+      <div className="mainContainer">
         <img src={ logo } className="App-logo2" alt="logo2" />
         <section className="feedback-section">
           <header className="feedback-header">

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { getToken, setUser } from '../redux/actions/loginAction';
 import logo from '../trivia.png';
 import './login.css';
-import config from '../config.png';
+import config from '../images/config.png';
 
 class Login extends Component {
   constructor(props) {

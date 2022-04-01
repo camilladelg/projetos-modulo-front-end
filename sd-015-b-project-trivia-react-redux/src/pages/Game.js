@@ -116,17 +116,15 @@ class Game extends Component {
       questions.length > 0
       && questions.map((element, index) => (
         answerIndex === index && ( // requisito 6 - o ternário faz renderizar uma questão de cada vez
-          <div key={ index }>
+          <>
             <h3 data-testid="question-category" className="font-question">
               { element.category }
             </h3>
             <p data-testid="question-text" className="font-question">
               { element.question }
             </p>
-            <section>
-              { this.renderAnswer(element, isVerified) }
-            </section>
-          </div>
+            { this.renderAnswer(element, isVerified) }
+          </>
         )))
     );
   }
@@ -177,7 +175,7 @@ class Game extends Component {
     const { userName, userEmail, questions } = this.props;
     const { styleBtn, score, timer } = this.state;
     return (
-      <div>
+      <div className="mainContainer">
         <img src={ logo } className="App-logo2" alt="logo2" />
         <div className="game">
           <header data-testid="header-profile-picture" className="header">
@@ -191,10 +189,7 @@ class Game extends Component {
             <h4 data-testid="header-score" className="font-hd">{ `Score: ${score}` }</h4>
           </header>
           <div className="questions">
-            {questions.length > 0 ? (
-              <section>
-                { this.renderQuestions() }
-              </section>)
+            {questions.length > 0 ? this.renderQuestions()
               : <h1 className="loading">Carregando...</h1>}
             <button
               className="button-next"

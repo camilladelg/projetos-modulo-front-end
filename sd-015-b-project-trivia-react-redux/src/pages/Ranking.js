@@ -41,7 +41,7 @@ class Ranking extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="mainContainer">
         <img src={ logo } className="App-logo2" alt="logo2" />
         <div className="ranking-section">
           <h3 data-testid="ranking-title">
