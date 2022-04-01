@@ -5,6 +5,7 @@
 .feedback-section {
   align-items: center;
   color: aliceblue;
+  column-gap: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
